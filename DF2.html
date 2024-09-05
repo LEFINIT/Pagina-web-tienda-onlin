@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #64F2C7;
+            font-family: sans-serif;
+        }
+        .container {
+            padding-top: 20px;
+        }
+        .header {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .details {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .product-list {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .footer {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .button {
+            background-color: #DC143C;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #C71539;
+        }
+        .arrow-left {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .close-button {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .product-list .row {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .product-list .row:last-child {
+            border-bottom: none;
+        }
+        .product-list .col-md-1 {
+            text-align: center;
+        }
+        .product-list .col-md-2 {
+            text-align: right;
+        }
+        .product-list .col-md-3 {
+            text-align: right;
+        }
+        .product-list .col-md-4 {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header d-flex justify-content-between align-items-center">
+                    <div class="arrow-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                        </svg>
+                    </div>
+                    <h2 class="title">Detalle de la factura</h2>
+                    <div class="close-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="details">
+                    <p><strong>Numero de factura:</strong> 0345</p>
+                    <p><strong>Valor de la factura:</strong> $ 10.800</p>
+                    <p><strong>Fecha de la factura:</strong> 26/03/2024</p>
+                    <p><strong>Hora de la factura:</strong> 13:56</p>
+                    <p><strong>Estado:</strong> Ok</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-list">
+                    <h3>Productos vendidos</h3>
+                    <div class="row">
+                        <div class="col-md-1">
+                            #
+                        </div>
+                        <div class="col-md-2">
+                            Producto
+                        </div>
+                        <div class="col-md-3">
+                            Cantidad
+                        </div>
+                        <div class="col-md-4">
+                            Precio Unitario
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                            1
+                        </div>
+                        <div class="col-md-2">
+                            Producto 1
+                        </div>
+                        <div class="col-md-3">
+                            2
+                        </div>
+                        <div class="col-md-4">
+                            $ 100.00
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                            2
+                        </div>
+                        <div class="col-md-2">
+                            Producto 2
+                        </div>
+                        <div class="col-md-3">
+                            1
+                        </div>
+                        <div class="col-md-4">
+                            $ 50.00
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                            3
+                        </div>
+                        <div class="col-md-2">
+                            Producto 3
+                        </div>
+                        <div class="col-md-3">
+                            3
+                        </div>
+                        <div class="col-md-4">
+                            $ 20.00
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer">
+                    <p>Usuario: Pepito Perez</p>
+                    <button class="button">Cerrar sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
